@@ -4,7 +4,7 @@ this.getCharacter = function (character) {
   const myTs = new Date();
   $http({
     method: 'GET',
-    url: 'http://gateway.marvel.com/v1/public/comics',
+    url: 'https://gateway.marvel.com/v1/public/comics',
     params: {
     "apikey": "75f03c4b1cd6f77e464461c42f03c068"
     // "ts": myTs,
