@@ -16,15 +16,22 @@
           <h1>Marvel <span>Character Search</span></h1>
         </div>
         <div class="col-md-6">
-          <input placeholder="Search By Name"></input>
-          <button>Search</button>
+          <input ng-model="character" placeholder="Search By Name"></input>
+          <button ng-click="getCharacterData(character)">Search</button>
         </div>
       </div>
     </div>
 
-
-    title
-    images
+    <table>
+      <tr ng-repeat="characters in characterData">
+        <th>{{thumbnail}}</th>
+        <th>{{name}}</th>
+        <th>{{series}}</th>
+        <th>{{description}}</th>
+      </tr>
+    </table>
+    name
+    thumbnail
     series
     description
 
