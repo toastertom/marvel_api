@@ -1,7 +1,6 @@
 angular.module('heroSearch').service('serviceHttp', function ($http, $q) {
 
 this.getCharacter = function (character) {
-  const myTs = new Date();
   $http({
     method: 'GET',
     url: 'https://gateway.marvel.com/v1/public/comics',

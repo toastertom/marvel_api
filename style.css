@@ -1,0 +1,37 @@
+body {
+
+}
+.header {
+background-color: #F0141E;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+span {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+input button{
+  display: inline-block;
+}
+
+input {
+margin-top: 25px;
+margin-left: 100px;
+border-radius: 5px;
+border-style: none;
+padding: 4px;
+
+}
+
+button {
+  
+}
