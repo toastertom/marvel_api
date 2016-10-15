@@ -22,14 +22,14 @@
       </div>
     </div>
 
-    <table>
-      <tr ng-repeat="character in characterData">
-        <th>{{character.thumbnail}}test</th>
-        <th>{{character.name}}</th>
-        <th>{{character.series}}</th>
-        <th>{{character.description}}</th>
-      </tr>
-    </table>
+
+      <div ng-repeat="character in characterData">
+        <div class="col-xs-3">{{character.thumbnail}}test</div>
+        <div class="col-xs-3">{{character.name}}</div>
+        <div class="col-xs-3">{{character.series}}</div>
+        <div class="col-xs-3">{{character.description}}</div>
+      </div>
+    <!-- </table> -->
 
 
 
