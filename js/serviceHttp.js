@@ -9,6 +9,8 @@ this.getCharacter = function (character) {
      }
   }).then(function (response) {
     console.log(response);
+    var filterCharData = response.data.data;
+    console.log(filterCharData);
   })
 }
 
