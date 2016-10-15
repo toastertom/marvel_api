@@ -24,7 +24,6 @@ this.getCharacter = function (character) {
       }
       responseData.push(obj);
     }
-    console.log(response);
     defer.resolve(responseData);
   })
 return defer.promise;
