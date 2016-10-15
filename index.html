@@ -24,10 +24,12 @@
 
 
       <div ng-repeat="character in characterData">
-        <div class="col-xs-3"><img src="{{character.thumbnail}}" alt="" />test</div>
+        <div class="col-xs-3"><img src="{{character.thumbnail}}" alt="" /></div>
         <div class="col-xs-3">{{character.name}}</div>
-        <div ng-repeat="comic in character.series" class="col-xs-3">{{comic.name}}</div>
         <div class="col-xs-3">{{character.description}}</div>
+          <div>
+            <div ng-repeat="comic in character.series" class="col-xs-3">{{comic.name}}</div>
+          </div>
       </div>
     <!-- </table> -->
 
