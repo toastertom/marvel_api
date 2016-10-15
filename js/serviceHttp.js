@@ -13,6 +13,7 @@ this.getCharacter = function (character) {
 
     var filterCharData = response.data.data.results;
     console.log(filterCharData);
+
     var responseData = [];
     for (var i = 0; i < filterCharData.length; i++){
 
@@ -25,6 +26,7 @@ this.getCharacter = function (character) {
       responseData.push(obj);
     }
     defer.resolve(responseData);
+    console.log(responseData);
   })
 return defer.promise;
 }
