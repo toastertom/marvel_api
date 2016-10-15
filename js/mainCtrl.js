@@ -3,9 +3,9 @@ angular.module('heroSearch').controller('mainCtrl', function ($scope, serviceHtt
 // $scope.characters = serviceHttp.getCharacter();
 
   $scope.getCharacterData = function (character) {
-    serviceHttp.getCharacter(character).then(response) {
-      $scope.characterData = response;
-    }
+    serviceHttp.getCharacter(character).then(function functionName(response) {
+        $scope.characterData = response;
+    })
   }
 
 })
