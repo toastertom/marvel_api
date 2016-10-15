@@ -10,7 +10,6 @@ this.getCharacter = function (character) {
     "name": character
      }
   }).then(function (response) {
-    console.log(response);
 
     var filterCharData = response.data.data.results;
     console.log(filterCharData);
