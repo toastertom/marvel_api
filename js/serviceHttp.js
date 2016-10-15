@@ -18,9 +18,9 @@ this.getCharacter = function (character) {
     for (var i = 0; i < filterCharData.length; i++){
 
       var obj = {
-        thumbnail: filterCharData[i].thumbnail,
+        thumbnail: filterCharData[i].thumbnail.path,
         name: filterCharData[i].name,
-        series: filterCharData[i].series,
+        series: filterCharData[i].series.items,
         description: filterCharData[i].description
       }
       responseData.push(obj);
