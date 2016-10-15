@@ -24,9 +24,9 @@
 
 
       <div ng-repeat="character in characterData">
-        <div class="col-xs-3">{{character.thumbnail}}test</div>
+        <div class="col-xs-3"><img src="{{character.thumbnail}}" alt="" />test</div>
         <div class="col-xs-3">{{character.name}}</div>
-        <div class="col-xs-3">{{character.series}}</div>
+        <div ng-repeat="comic in character.series" class="col-xs-3">{{comic.name}}</div>
         <div class="col-xs-3">{{character.description}}</div>
       </div>
     <!-- </table> -->
