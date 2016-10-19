@@ -17,14 +17,14 @@
           <h1>Marvel <span>Character Search</span></h1>
         </div>
         <div class="col-md-6">
-          <input ng-model="character" placeholder="Search By Name"></input>
-          <button ng-click="getCharacterData(character)">Search</button>
+          <input  ng-model="character" placeholder="Search By Name" ng-submit="getCharacterData(character)"></input>
+          <!-- <button ng-click="getCharacterData(character)">Search</button> -->
         </div>
       </div>
     </div>
 
     <div class="profile">
-      <div class="container" ng-repeat="character in characterData | filter: character">
+      <div class="container" ng-repeat="character in characterData">
         <!-- Thumbnail -->
         <div id="thumbnail" class="col-xs-6"><img src="{{character.thumbnail}}" alt="" /></div>
         <!-- Name -->
