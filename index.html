@@ -24,7 +24,7 @@
     </div>
 
     <div class="profile">
-      <div class="container" ng-repeat="character in characterData">
+      <div class="container" ng-repeat="character in characterData | filter: character">
         <!-- Thumbnail -->
         <div id="thumbnail" class="col-xs-6"><img src="{{character.thumbnail}}" alt="" /></div>
         <!-- Name -->
