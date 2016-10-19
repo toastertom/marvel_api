@@ -25,8 +25,8 @@
 
     <div class="main">
       <div class="container" ng-repeat="character in characterData">
-        <!-- Image -->
-        <div class="col-xs-3"><img src="{{character.thumbnail}}" alt="" /></div>
+        <!-- Thumbnail -->
+        <div id="thumbnail" class="col-xs-3"><img src="{{character.thumbnail}}" alt="" /></div>
         <!-- Name & Description -->
         <div class="col-xs-3">{{character.name}}</div>
         <div class="col-xs-3">{{character.description}}</div>
