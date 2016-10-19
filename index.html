@@ -26,13 +26,13 @@
     <div class="main">
       <div class="container" ng-repeat="character in characterData">
         <!-- Thumbnail -->
-        <div id="thumbnail" class="col-xs-3"><img src="{{character.thumbnail}}" alt="" /></div>
+        <div id="thumbnail" class="col-xs-6"><img src="{{character.thumbnail}}" alt="" /></div>
         <!-- Name & Description -->
-        <div class="col-xs-3">{{character.name}}</div>
-        <div class="col-xs-3">{{character.description}}</div>
+        <div id="name" class="col-xs-6">{{character.name}}</div>
+        <div id="descrip" class="col-xs-3">{{character.description}}</div>
           <!-- comic book names -->
           <div>
-            <div ng-repeat="comic in character.series" class="col-xs-3">{{comic.name}}</div>
+            <div id="comic" ng-repeat="comic in character.series" class="col-xs-3">{{comic.name}}</div>
           </div>
       </div>
     </div>
