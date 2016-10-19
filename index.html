@@ -16,8 +16,8 @@
         <div class="col-md-6">
           <h1>Marvel <span>Character Search</span></h1>
         </div>
-        <div class="col-md-6">
-          <input  ng-model="character" placeholder="Search By Name" ng-submit="getCharacterData(character)"></input>
+        <div class="col-md-6" ng-submit="getCharacterData(character)">
+          <input  ng-model="character" placeholder="Search By Name"></input>
           <!-- <button ng-click="getCharacterData(character)">Search</button> -->
         </div>
       </div>
