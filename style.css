@@ -19,13 +19,17 @@ span {
   font-weight: bold;
 }
 
+form {
+  text-align: center;
+}
+
 input button{
   display: inline-block;
 }
 
 input {
-margin-top: 25px;
-margin-left: 100px;
+/*margin-top: 25px;
+margin-left: 100px;*/
 border-radius: 5px;
 border-style: none;
 padding: 4px;
