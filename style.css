@@ -40,3 +40,7 @@ button {
 width: 246px;
 height: 324px;
 }
+
+#comic {
+  border: 1px solid black;
+}
