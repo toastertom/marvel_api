@@ -39,7 +39,7 @@
     </div>
     <!-- comic book names -->
     <div class="comic-data">
-      <div class="container">
+      <div class="container" ng-repeat="character in characterData">
         <div id="comic" ng-repeat="comic in character.series" class="col-xs-3">{{comic.name}}</div>
       </div>
     </div>
