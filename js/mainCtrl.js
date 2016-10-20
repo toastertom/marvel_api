@@ -5,6 +5,7 @@ angular.module('heroSearch').controller('mainCtrl', function ($scope, serviceHtt
   $scope.getCharacterData = function (character) {
     serviceHttp.getCharacter(character).then(function (response) {
         $scope.characterData = response;
+        $scope.character = '';
     })
   }
 
