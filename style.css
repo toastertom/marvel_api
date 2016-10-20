@@ -39,11 +39,11 @@ padding: 4px;
 }
 
 .profile {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   /*background-color: #86CBE3;*/
 
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 6px 6px 5px #888888;
 }
 
 #thumbnail {
