@@ -7,7 +7,7 @@ this.getCharacter = function (character) {
     url: 'https://gateway.marvel.com/v1/public/characters',
     params: {
     "apikey": "75f03c4b1cd6f77e464461c42f03c068",
-    "name": character
+    "nameStartsWith": character
      }
   }).then(function (response) {
 
