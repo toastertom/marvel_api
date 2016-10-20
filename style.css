@@ -41,7 +41,7 @@ padding: 4px;
 .profile {
   padding-top: 10px;
   padding-bottom: 10px;
-  /*background-color: #86CBE3;*/
+  background-color: white;
 
   box-shadow: 6px 6px 5px #888888;
 }
@@ -57,5 +57,5 @@ height: 324px;
 
 .card-container {
   padding: 20px;
-  background-color: gray;
+  background-color: #F1F1F1;
 }
