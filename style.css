@@ -32,20 +32,16 @@ input button{
 input {
 margin-top: 25px;
 
-border-radius: 10px;
+border-radius: 5px;
 border-style: none;
 padding: 4px;
 
-
 }
 
-button {
-
-}
 .profile {
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #86CBE3;
+  /*background-color: #86CBE3;*/
 
   box-shadow: 10px 10px 5px #888888;
 }
