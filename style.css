@@ -54,3 +54,8 @@ height: 324px;
 #comic {
   border: 1px solid black;
 }
+
+.card-container {
+  padding: 20px;
+  background-color: gray;
+}
