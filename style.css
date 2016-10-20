@@ -58,6 +58,9 @@ height: 324px;
 
 #comic {
   border: 1px solid black;
+  width: 250px;
+  height: 22px;
+  overflow: scroll;
 }
 
 .card-container {
