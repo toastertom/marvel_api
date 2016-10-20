@@ -33,11 +33,12 @@
           <!-- Description -->
           <div id="descrip" class="col-xs-6">{{character.description}}</div>
             <!-- comic book names -->
-            <h3>Comic Appearances:</h3>
-            <div class="container" id="comic">
+            <div class="container">
+            <div class="col-xs-6" id="comic">
               <h3>Comic Appearances:</h3>
               <div id="comic-list" ng-repeat="comic in character.series" class="col-xs-12">{{comic.name}}</div>
             </div>
+          </div>
         </div>
       </div>
     </div>
