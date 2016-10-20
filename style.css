@@ -70,11 +70,11 @@ div #comic {
   height: 240px;
   overflow: scroll;
   background-color: #F1F1F1;
+  margin-left: 10px;
 }
 #comic-list {
   padding: 5px;
   border-bottom: 1px solid black;
-  margin-left: 5px;
 }
 .card-container {
   padding: 20px;
