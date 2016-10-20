@@ -45,6 +45,10 @@ padding: 4px;
 
   /*box-shadow: 6px 6px 5px #888888;*/
 }
+#descrip {
+  padding-bottom: 10px;
+}
+
 #card {
   background-color: white;
   box-shadow: 6px 6px 5px #888888;
