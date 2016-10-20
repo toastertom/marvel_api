@@ -74,6 +74,7 @@ div #comic {
 #comic-list {
   padding: 5px;
   border-bottom: 1px solid black;
+  margin-left: 5px;
 }
 .card-container {
   padding: 20px;
