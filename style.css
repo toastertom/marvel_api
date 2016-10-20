@@ -70,7 +70,7 @@ div #comic {
   height: 240px;
   overflow: scroll;
   background-color: #F1F1F1;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 #comic-list {
   padding: 5px;
