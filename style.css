@@ -5,14 +5,22 @@ body {
 background-color: #F0141E;
 text-align: center;
 padding-bottom: 10px;
+
+
 }
 
 h1{
   color: #fff;
   text-align: center;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 15px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
 }
 
 h3 {
