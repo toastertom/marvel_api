@@ -22,7 +22,8 @@ this.getCharacter = function (character) {
         //filterCharData + "/portrait_incredible."+filterCharData.extension
         name: filterCharData[i].name,
         series: filterCharData[i].series.items,
-        description: filterCharData[i].description
+        description: filterCharData[i].description,
+        urls: `${filterCharData[i].urls.url}`
       }
       responseData.push(obj);
     }
