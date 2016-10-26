@@ -59,6 +59,7 @@ padding: 8px;
   padding-bottom: 10px;
   text-align: center;
 
+
   /*box-shadow: 6px 6px 5px #888888;*/
 }
 #descrip {
@@ -74,6 +75,10 @@ padding: 8px;
 #thumbnail {
 width: 246px;
 height: 324px;
+display: inline-block;
+}
+#descrip {
+  display: inline-block;
 }
 
 div #comic {
@@ -87,6 +92,7 @@ div #comic {
 #comic-list {
   padding: 5px;
   border-bottom: 1px solid black;
+  display: inline-block;
 }
 .card-container {
   padding: 20px;
