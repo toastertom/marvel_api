@@ -71,16 +71,21 @@ padding: 8px;
   background-color: white;
   box-shadow: 6px 6px 5px #888888;
   padding: 10px;
+  position: relative;
 }
 
 #thumbnail {
 width: 246px;
 height: 324px;
-display: inline-block;
-margin: 0 auto;
+position: absolute;
+left: 50%;
+right: 50%;
+
 }
 #descrip {
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  right: 50%;
 }
 
 div #comic {
@@ -89,7 +94,9 @@ div #comic {
   height: 240px;
   overflow: scroll;
   background-color: #F1F1F1;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  right: 50%;
 }
 #comic-list {
   padding: 5px;
