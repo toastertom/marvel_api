@@ -27,14 +27,17 @@
       <div class="profile" ng-repeat="character in characterData">
         <div id="card" class="container" >
           <!-- Thumbnail -->
-          <div id="thumbnail" class="col-xs-3"><img src="{{character.thumbnail}}" alt="" /></div>
+          <div id="thumbnail" class="col-xs-4"><img src="{{character.thumbnail}}" alt="" /></div>
           <!-- Name -->
-          <div id="name" class="col-xs-3"><h2>{{character.name}}</h2></div>
+          <!-- <div id="name" class="col-xs-4"><h2>{{character.name}}</h2></div> -->
           <!-- Description -->
-          <div id="descrip" class="col-xs-3"><p>{{character.description}}</p></div>
+          <div id="descrip" class="col-xs-4">
+            <h2>{{character.name}}</h2>
+            <p>{{character.description}}</p>
+          </div>
             <!-- comic book names -->
 
-            <div class="col-xs-3">
+            <div class="col-xs-4">
               <h3>Comic Appearances:</h3>
               <div id="comic">
               <div id="comic-list" ng-repeat="comic in character.series" class="col-xs-12">{{comic.name}}</div>
