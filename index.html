@@ -13,7 +13,7 @@
     <div class="header">
       <div class="container">
         <div class="col-md-8">
-        <h1>Marvel Character Search</h1>
+        <h1>Marvel Hero Search</h1>
         </div>
         <div class="col-md-4">
           <form ng-submit="getCharacterData(character)">
@@ -24,7 +24,7 @@
     </div>
     <!-- Character Cards -->
     <div class="card-container">
-      <div class ="container" class="profile" ng-repeat="character in characterData">
+      <div class="profile" ng-repeat="character in characterData">
         <div id="card" class="container" >
           <!-- Thumbnail -->
           <div id="thumbnail" class="col-xs-6"><img src="{{character.thumbnail}}" alt="" /></div>
@@ -33,14 +33,14 @@
           <!-- Description -->
           <div id="descrip" class="col-xs-6"><p>{{character.description}}</p></div>
             <!-- comic book names -->
-            <div class="container">
+            
             <div class="col-xs-3">
               <h3>Comic Appearances:</h3>
               <div id="comic">
               <div id="comic-list" ng-repeat="comic in character.series" class="col-xs-12">{{comic.name}}</div>
             </div>
             </div>
-          </div>
+
         </div>
       </div>
     </div>
