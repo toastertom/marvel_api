@@ -23,7 +23,7 @@ this.getCharacter = function (character) {
         name: filterCharData[i].name,
         series: filterCharData[i].series.items,
         description: filterCharData[i].description,
-        urls: `${filterCharData[i].urls.url}`
+        urls: filterCharData[i].urls.url
       }
       responseData.push(obj);
     }
