@@ -45,7 +45,9 @@
             </div>
           <div class="col-xs-4">
             <div id="links" ng-repeat="link in character.urls">
-              <button href="{{link.url}}" target="_blank">{{link.type}}</button>
+              <button href="{{link.url}}">
+                {{link.type}}
+              </button>
             </div>
           </div>
         </div>
