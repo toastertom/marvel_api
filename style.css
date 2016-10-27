@@ -71,7 +71,7 @@ padding: 8px;
   background-color: white;
   box-shadow: 6px 6px 5px #888888;
   padding: 10px;
-  
+
 }
 
 #thumbnail {
@@ -95,8 +95,16 @@ div #comic {
   padding: 5px;
   border-bottom: 1px solid black;
 }
+#links {
+  margin: 10px;
+}
+
 .card-container {
   padding: 20px;
   background-color: #F1F1F1;
   /*text-align: center;*/
+}
+
+.card-actions {
+  display: flex;
 }
