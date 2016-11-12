@@ -5,11 +5,12 @@ width: 100%;
 background-color: #F0141E;
 text-align: center;
 padding-bottom: 10px;
-display: flex;
-justify-content: space-around;
-align-items: center;
+}
 
-
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 h1{
