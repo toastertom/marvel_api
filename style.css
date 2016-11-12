@@ -5,9 +5,11 @@ width: 100%;
 background-color: #F0141E;
 text-align: center;
 padding-bottom: 10px;
+width: 100%;
 }
 
 .container {
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,8 +19,8 @@ h1{
   color: #fff;
   text-align: center;
   font-weight: bolder;
-  font-size: 50px;
-  margin-bottom: 15px;
+  font-size: 40px;
+  margin: 10px;
 }
 
 h2 {
@@ -35,12 +37,6 @@ p {
   font-size: 16px;
 }
 
-span {
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-}
-
 form {
   text-align: center;
 }
@@ -50,11 +46,10 @@ input button{
 }
 
 input {
-margin-top: 20px;
 
 border-radius: 5px;
 border-style: none;
-padding: 8px;
+padding: 4px;
 
 }
 
@@ -118,4 +113,16 @@ div #comic {
 footer {
   background-color: #F0141E;
   height: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
 }
