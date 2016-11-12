@@ -1,0 +1,38 @@
+<!-- Character Cards -->
+<div class="card-container">
+  <div class="profile" ng-repeat="character in characterData">
+    <div id="card" class="container" >
+      <!-- Thumbnail -->
+      <div id="thumbnail" class="col-xs-4"><img src="{{character.thumbnail}}" alt="" /></div>
+      <!-- Name -->
+      <!-- <div id="name" class="col-xs-4"><h2>{{character.name}}</h2></div> -->
+      <!-- Description -->
+      <div id="descrip" class="col-xs-4">
+        <h2>{{character.name}}</h2>
+        <p>{{character.description}}</p>
+        <div class="card-actions">
+          <div id="links" ng-repeat="link in character.urls">
+            <a href="{{link.url}}" class="btn btn-default" target="_blank" >
+              {{link.type}}
+            </a>
+          </div>
+        </div>
+      </div>
+        <!-- comic book names -->
+
+        <div class="col-xs-3">
+          <h3>Comic Appearances:</h3>
+          <div id="comic">
+          <div id="comic-list" ng-repeat="comic in character.series" class="col-xs-12">{{comic.name}}</div>
+        </div>
+        </div>
+      <!-- <div class="col-xs-1">
+        <div id="links" ng-repeat="link in character.urls">
+          <a href="{{link.url}}" class="btn btn-default" target="_blank">
+            {{link.type}}
+          </a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
