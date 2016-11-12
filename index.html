@@ -18,15 +18,14 @@
         </div>
         <div class="col-md-4">
           <form ng-submit="getCharacterData(character)">
-            <input ng-model="character" placeholder="Search By Name"></input>
+            <input ui-sref="characters" ng-model="character" placeholder="Search By Name"></input>
           </form>
         </div>
       </div>
     </div>
 
-    <main>
     <ui-view></ui-view>
-    </main>
+
 
       <script src="
       https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
