@@ -1,6 +1,7 @@
 body {
 width: 100%;
 }
+
 .header {
 background-color: #F0141E;
 text-align: center;
@@ -46,21 +47,17 @@ input button{
 }
 
 input {
-
 border-radius: 5px;
 border-style: none;
 padding: 4px;
-
 }
 
 .profile {
   padding-top: 10px;
   padding-bottom: 10px;
-
-
-
   /*box-shadow: 6px 6px 5px #888888;*/
 }
+
 #descrip {
   padding-bottom: 10px;
   margin: 0 auto;
