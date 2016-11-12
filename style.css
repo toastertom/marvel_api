@@ -108,3 +108,8 @@ div #comic {
 .card-actions {
   display: flex;
 }
+
+footer {
+  background-color: #F0141E;
+  height: 100px;
+}
