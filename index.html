@@ -20,10 +20,10 @@
 
     <div class="header">
       <div class="container">
-        <div class="col-md-6">
+        <div class="col-sm-6">
         <h1>Marvel Archive</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <form ng-submit="getCharacterData(character)">
             <input ng-model="character" placeholder="Search By Name"></input>
           </form>
@@ -36,11 +36,11 @@
       <div class="profile" ng-repeat="character in characterData">
         <div id="card"  >
           <!-- Thumbnail -->
-          <div id="thumbnail" class="col-xs-4"><img src="{{character.thumbnail}}" alt="" /></div>
+          <div id="thumbnail" class="col-sm-4"><img src="{{character.thumbnail}}" alt="" /></div>
           <!-- Name -->
-          <!-- <div id="name" class="col-xs-4"><h2>{{character.name}}</h2></div> -->
+          <!-- <div id="name" class="col-sm-4"><h2>{{character.name}}</h2></div> -->
           <!-- Description -->
-          <div id="descrip" class="col-xs-4">
+          <div id="descrip" class="col-sm-4">
             <h2>{{character.name}}</h2>
             <p>{{character.description}}</p>
             <div class="card-actions">
@@ -53,10 +53,10 @@
           </div>
             <!-- comic book names -->
 
-            <div class="col-xs-4">
+            <div class="col-sm-4">
               <h3>Comic Appearances:</h3>
               <div id="comic">
-              <div id="comic-list" ng-repeat="comic in character.series" class="col-xs-12">{{comic.name}}</div>
+              <div id="comic-list" ng-repeat="comic in character.series" class="col-sm-12">{{comic.name}}</div>
             </div>
             </div>
         </div>
@@ -73,11 +73,11 @@
     <footer>
       <div class="container">
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <p>Created by Thomas Tate &copy 2016</p>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <a class="btn btn-social-icon btn-github" target="_blank" href="https://github.com/toastertom">
             <span class="fa fa-github"></span>
           </a>
@@ -87,7 +87,7 @@
           </a>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <form ng-submit="getCharacterData(character)">
             <input ng-model="character" placeholder="Search By Name"></input>
           </form>
