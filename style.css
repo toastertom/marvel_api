@@ -108,6 +108,12 @@ div #comic {
   display: flex;
 }
 
+@media (max-width: 320px) {
+  #card {
+    width: 100%;
+  }
+}
+
 footer {
   background-color: #F0141E;
   height: 100px;
