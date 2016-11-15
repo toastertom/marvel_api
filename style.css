@@ -134,6 +134,13 @@ footer p {
 
 @media (max-width: 376px) {
   footer {
-    height: 105px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 376px) {
+
+  .container {
+    height: 110px;
   }
 }
