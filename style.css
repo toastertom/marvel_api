@@ -62,7 +62,7 @@ padding: 4px;
   padding-bottom: 10px;
 }
 
-#card {
+.card {
   background-color: white;
   box-shadow: 6px 6px 5px #888888;
   padding: 10px;
