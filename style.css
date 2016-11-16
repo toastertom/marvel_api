@@ -161,4 +161,11 @@ footer p {
     width: 95px;
     font-size: 11px;
   }
+  p {
+    font-size: 14px;
+  }
+  .card-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
