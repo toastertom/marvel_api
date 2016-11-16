@@ -164,8 +164,10 @@ footer p {
   p {
     font-size: 14px;
   }
-  .card-container {
-    padding-left: 0px;
-    padding-right: 0px;
+  #links {
+    margin: 0px;
+  }
+  #comic {
+    width: 300px;
   }
 }
