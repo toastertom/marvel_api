@@ -11,6 +11,7 @@ width: 100%;
 
 .container {
   height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -108,11 +109,11 @@ div #comic {
   display: flex;
 }
 
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {
   # {
     width: 100%;
   }
-}
+}*/
 
 footer {
   background-color: #F0141E;
