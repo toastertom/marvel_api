@@ -139,11 +139,10 @@ footer p {
   footer {
     height: 110px;
   }
-}
-
-@media (max-width: 376px) {
-
   .container {
     height: 110px;
+  }
+  input {
+    width: 15px;
   }
 }
