@@ -167,7 +167,7 @@ footer p {
   #links {
     margin: 0px;
   }
-  #comic {
-    width: 300px;
+  div #comic {
+    width: 250px;
   }
 }
