@@ -41,6 +41,7 @@ p {
 
 form {
   text-align: center;
+  margin-right: 0;
 }
 
 input button{
@@ -144,6 +145,6 @@ footer p {
   }
   input {
     width: 100px;
-    font-size: 8px;
+    font-size: 14px;
   }
 }
