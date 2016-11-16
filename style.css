@@ -151,6 +151,13 @@ footer p {
 }
 
 @media (max-width: 376px) {
+
+  h1 {
+    margin-bottom: 5px;
+  }
+  h5 {
+    margin-top: 5px;
+  }
   footer {
     height: 110px;
   }
