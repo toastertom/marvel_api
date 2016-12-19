@@ -1,1 +1,1 @@
-angular.module('heroSearch', ['ui.router'])
+angular.module('heroSearch', [])

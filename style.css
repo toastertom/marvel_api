@@ -1,0 +1,180 @@
+body {
+width: 100%;
+}
+
+.header {
+background-color: #F0141E;
+text-align: center;
+padding-bottom: 10px;
+width: 100%;
+}
+
+.container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 10px;
+}
+
+h2 {
+  color: black;
+  font-weight: bolder;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+h5 {
+  color: #fff;
+}
+
+
+
+p {
+  font-size: 16px;
+}
+
+form {
+  text-align: center;
+  margin-right: 0;
+}
+
+input button{
+  display: inline-block;
+}
+
+input {
+border-radius: 5px;
+border-style: none;
+padding: 4px;
+}
+
+.profile {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*box-shadow: 6px 6px 5px #888888;*/
+}
+
+#descrip {
+  padding-bottom: 10px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 6px 6px 5px #888888;
+  padding: 10px;
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#thumbnail {
+width: 246px;
+height: 324px;
+
+
+}
+#descrip {
+
+}
+
+div #comic {
+  border: 1px solid black;
+  width: 305px;
+  height: 240px;
+  overflow: scroll;
+  background-color: #F1F1F1;
+}
+#comic-list {
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+#links {
+  margin: 10px;
+}
+
+.card-container {
+  padding: 20px;
+  background-color: #F1F1F1;
+
+
+}
+
+.card-actions {
+  display: flex;
+}
+
+/*@media (max-width: 320px) {
+  # {
+    width: 100%;
+  }
+}*/
+
+footer {
+  background-color: #F0141E;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+}
+
+@media (max-width: 426px) {
+  h1 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 376px) {
+
+  h1 {
+    margin-bottom: 5px;
+  }
+  h5 {
+    margin-top: 5px;
+  }
+  footer {
+    height: 110px;
+  }
+  .container {
+    height: 110px;
+  }
+  input {
+    width: 95px;
+    font-size: 11px;
+  }
+  p {
+    font-size: 14px;
+  }
+  #links {
+    margin: 0px;
+  }
+  div #comic {
+    width: 250px;
+  }
+}

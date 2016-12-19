@@ -2,24 +2,103 @@
 <html ng-app="heroSearch">
   <head>
     <meta charset="utf-8">
-    <title>Hero Search</title>
-
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Archive</title>
+    <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <!-- Fontawesome -->
+  <script src="https://use.fontawesome.com/48512e0fca.js"></script>
+  <!-- for social icons -->
+  <link rel="stylesheet" href="bootstrap-social.css"></link>
+   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css"></link>
 
-    </script>
   </head>
   <body ng-controller="mainCtrl">
+
     <div class="header">
       <div class="container">
-
+        <div class="col-sm-6">
+        <h1>Marvel Archive</h1>
+        <h5>Searchable Database Powered By Marvel Comics API</h5>
+        </div>
+        <div class="col-sm-5">
+          <form ng-submit="getCharacterData(character)">
+            <input ng-model="character" placeholder="Search By Name"></input>
+          </form>
+        </div>
       </div>
     </div>
 
+    <!-- Character Cards -->
+    <main class="card-container">
+      <div class="profile" ng-repeat="character in characterData">
+        <div class="card"  >
+          <!-- Thumbnail -->
+          <div id="thumbnail" class="col-sm-4"><img src="{{character.thumbnail}}" alt="" /></div>
+          <!-- Name -->
+          <!-- <div id="name" class="col-sm-4"><h2>{{character.name}}</h2></div> -->
+          <!-- Description -->
+          <div id="descrip" class="col-sm-4">
+            <h2>{{character.name}}</h2>
+            <p>{{character.description}}</p>
+            <div class="card-actions">
+              <div id="links" ng-repeat="link in character.urls">
+                <a href="{{link.url}}" class="btn btn-default" target="_blank" >
+                  {{link.type}}
+                </a>
+              </div>
+            </div>
+          </div>
+            <!-- comic book names -->
+
+            <div class="col-sm-4">
+              <h3>Comic Appearances:</h3>
+              <div id="comic">
+              <div id="comic-list" ng-repeat="comic in character.series" class="col-sm-12">{{comic.name}}</div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <image src="images/guardiansofthegalaxy.jpg"></image>
+        <image src="images/xmen.jpg"></image>
+        <image src="images/avengers.jpg"></image>
+        <image src="images/spiderman.jpg"></image>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container">
+
+        <div class="col-sm-4">
+          <p> Thomas Tate &copy 2016</p>
+        </div>
+
+        <div class="col-sm-4">
+          <a class="btn btn-social-icon btn-github" target="_blank" href="https://github.com/toastertom">
+            <span class="fa fa-github"></span>
+          </a>
+
+          <a class="btn btn-social-icon btn-linkedin" target="_blank" href="https://www.linkedin.com/in/thomas-tate-a0240638">
+            <span class="fa fa-linkedin"></span>
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <form ng-submit="getCharacterData(character)">
+            <input ng-model="character" placeholder="Search By Name"></input>
+          </form>
+        </div>
+      </div>
+
+    </footer>
 
 
-
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
       <script src="
       https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="js/app.js"></script>
@@ -27,3 +106,6 @@
     <script src="js/serviceHttp.js"></script>
   </body>
 </html>
+
+
+<!-- searchable superhero archive powered by marvel api -->
