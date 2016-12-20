@@ -17,11 +17,11 @@ angular.module('heroSearch')
     return function(scope, element, attrs) {
         angular.element($window).bind('hidden', function() {
              if (this.pageYOffset >= 500) {
-                element.addClass('hidden');
+                //element.addClass('hidden');
                 element.removeClass('card');
               }  else {
                 //  scope.boolChangeClass = false;
-                element.removeClass('hidden');
+                //element.removeClass('hidden');
                 element.addClass('card');
              }
 
