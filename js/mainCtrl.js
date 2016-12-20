@@ -13,10 +13,10 @@ angular.module('heroSearch').controller('mainCtrl', function ($scope, serviceHtt
 })
 
 angular.module('heroSearch')
-.directive("scroll-hidden", function ($window) {
+.directive("hidden", function ($window) {
     return function(scope, element, attrs) {
-        angular.element($window).bind("scroll-hidden", function() {
-             if (this.pageYOffset >= 630) {
+        angular.element($window).bind("hidden", function() {
+             if (this.pageYOffset >= 500) {
                 element.addClass('hidden');
                 // element.removeAttr('id');
               }  else {
