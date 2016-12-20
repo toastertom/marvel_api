@@ -11,3 +11,20 @@ angular.module('heroSearch').controller('mainCtrl', function ($scope, serviceHtt
   }
 
 })
+
+angular.module('heroSearch')
+.directive("scroll-hidden", function ($window) {
+    return function(scope, element, attrs) {
+        angular.element($window).bind("scroll-hidden", function() {
+             if (this.pageYOffset >= 630) {
+                element.addClass('hidden');
+                // element.removeAttr('id');
+              }  else {
+                //  scope.boolChangeClass = false;
+                element.removeClass('hidden');
+                // element.addClass('');
+             }
+
+        });
+    };
+});
