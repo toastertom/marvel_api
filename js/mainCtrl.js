@@ -10,10 +10,10 @@ angular.module('heroSearch').controller('mainCtrl', function ($scope, serviceHtt
     })
   }
 
-})
+});
 
-angular.module('heroSearch')
-.directive('hidden', function ($window) {
+app = angular.module('heroSearch')
+app.directive('hidden', function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind('hidden', function() {
              if (this.pageYOffset >= 400) {
