@@ -1,7 +1,7 @@
 app = angular.module('heroSearch')
-app.directive('hidden', function ($window) {
+app.directive('scroll', function ($window) {
     return function(scope, element, attrs) {
-        angular.element($window).bind('hidden', function() {
+        angular.element($window).bind('scroll', function() {
              if (this.pageYOffset >= 300) {
                 element.addClass('hidden');
                 //element.removeClass('card');
