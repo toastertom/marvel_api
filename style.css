@@ -1,5 +1,6 @@
 body {
 width: 100%;
+background-color: #F0141E;
 }
 
 .header {
@@ -110,6 +111,10 @@ div #comic {
   background-color: #F1F1F1;
 
 
+}
+
+.hidden {
+  display:none;
 }
 
 .card-actions {
