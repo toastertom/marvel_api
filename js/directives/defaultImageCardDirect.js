@@ -1,3 +1,4 @@
+// Note to self: Directive name must be different than the attribute that is being assigned.
 app = angular.module('heroSearch')
 app.directive('scroll', function ($window) {
     return function(scope, element, attrs) {
@@ -7,7 +8,7 @@ app.directive('scroll', function ($window) {
                 //element.removeClass('card');
               }  else {
                 //  scope.boolChangeClass = false;
-                //element.removeClass('hidden');
+                element.removeClass('hidden');
                 //element.addClass('card');
              }
 
