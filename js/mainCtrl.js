@@ -13,16 +13,16 @@ angular.module('heroSearch').controller('mainCtrl', function ($scope, serviceHtt
 })
 
 angular.module('heroSearch')
-.directive("hidden", function ($window) {
+.directive('hidden', function ($window) {
     return function(scope, element, attrs) {
-        angular.element($window).bind("hidden", function() {
+        angular.element($window).bind('hidden', function() {
              if (this.pageYOffset >= 500) {
                 element.addClass('hidden');
-                // element.removeAttr('id');
+                element.removeClass('card');
               }  else {
                 //  scope.boolChangeClass = false;
                 element.removeClass('hidden');
-                // element.addClass('');
+                element.addClass('card');
              }
 
         });
