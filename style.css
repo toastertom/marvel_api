@@ -112,6 +112,7 @@ div #comic {
 
 .hidden {
   display:none;
+  background-color: pink;
 }
 
 .card-actions {
